@@ -1,0 +1,15 @@
+/**
+ * ${dirName}Config
+ * @author ${ref.author}
+ * @date ${datetime}
+ * @since ${pkg.version}
+ */
+ 
+import { Config } from '@tarojs/taro'
+
+const config: Config =  {
+  navigationBarTitleText: 'Taro-hooks',
+  enableShareAppMessage: true,
+}
+
+export default config
