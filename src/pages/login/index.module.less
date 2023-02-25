@@ -1,0 +1,149 @@
+/**
+ * loginStyle
+ * @author 伍东京
+ * @date 2022-03-08 15:37
+ * @since 1.0.0
+ */
+
+.login {
+  color: white;
+  background-color: #05061b;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .form {
+    margin-top: 208px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.title {
+  color: #d7d7e0;
+  font-size: 14px;
+
+  line-height: 22px;
+}
+.input {
+  margin-top: 14px;
+  width: 327px;
+  background-color: transparent;
+  margin-left: 0;
+  color: white;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #05061b;
+  /*   border: 5px solid transparent; */
+  background-image: linear-gradient(#05061b, #05061b),
+    linear-gradient(90deg, #d7d7e0 0%, #d7d7e0 100%);
+  border: none;
+  /*   border: 5px solid transparent; */
+  box-sizing: border-box;
+
+  font-weight: 300;
+  padding: 1px;
+  background-clip: content-box, padding-box;
+
+  border-radius: 8px;
+  // filter: hue-rotate(360deg);
+  // clip-path: inset(0px round 16px);
+  :global {
+    .at-input__container {
+      padding: 17px 20px;
+    }
+    .at-input--disabled {
+      opacity: 1;
+    }
+    .at-input__input {
+      font-size: 16px;
+      line-height: 22px;
+      color: white;
+      caret-color: #5dc278;
+
+      &:focus {
+        color: red;
+      }
+    }
+  }
+}
+
+.code {
+  position: relative;
+  margin-top: 32px;
+}
+
+.placeholder {
+  color: #585c8a;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sendMsg {
+  position: absolute;
+  font-size: 16px;
+  line-height: 24px;
+  right: 20px;
+  top: 45px;
+  z-index: 9;
+  color: rgba(#ffffff, 0.9);
+  .time {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(#ffffff, 0.5);
+  }
+}
+
+.activityInput {
+  background-image: linear-gradient(#05061b, #05061b),
+    linear-gradient(90deg, #7762ff 0%, #c589e4 48.98%, #fc6590 100%);
+  transition: filter 0.5s ease;
+  animation: huerotate 6s infinite linear;
+}
+
+.phone {
+  position: relative;
+  .phoneBtn {
+    position: absolute;
+    width: 327px;
+    top: 22px;
+
+    height: 58px;
+    background-color: transparent;
+  }
+}
+
+.goLogin {
+  width: 160px;
+  height: 56px;
+  background-color: rgba(#2c77f4, 0.5);
+  border-radius: 12px;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 120px;
+}
+.wxlogin {
+  opacity: 60%;
+  width: 98px;
+  height: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 24px;
+}
+
+@keyframes huerotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rorate(360deg);
+  }
+}

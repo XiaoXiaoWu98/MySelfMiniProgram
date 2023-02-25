@@ -5,16 +5,31 @@
  * @since ${pkg.version}
  */
 
-import React from 'react'
+import React, { MutableRefObject, ReactElement, memo  } from 'react'
 import { View } from '@tarojs/components'
 // import classnames from 'classnames'
-// import styles from './index.module.scss'
+import styles from './index.module.less'
 
-export interface ${dirName}Props {}
-
-function ${dirName}(_props: ${dirName}Props) {
-    return <View>${dirName}</View>
+export interface ${dirName}Props {
+    [key: string]: any
 }
 
-export default React.memo(${dirName})
+
+interface ${dirName}Ref {
+    [key: string]: any
+}
+
+
+function ${dirName}(props: ${dirName}Props, ref: MutableRefObject<${dirName}Ref>): ReactElement {
+
+    const { } = props;
+     
+    return (
+        <View>
+            ${dirName}
+        </View>
+    )
+}
+
+export default memo(${dirName})
 

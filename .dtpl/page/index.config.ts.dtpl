@@ -8,7 +8,7 @@
 import { Config } from '@tarojs/taro'
 
 const config: Config =  {
-  navigationBarTitleText: 'Taro-hooks',
+  navigationBarTitleText: 'title',
   enableShareAppMessage: true,
 }
 

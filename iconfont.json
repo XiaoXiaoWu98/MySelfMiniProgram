@@ -1,0 +1,10 @@
+{
+    "symbol_url": "https://at.alicdn.com/t/c/font_3585963_rbpygmvue5.js",
+    "save_dir": "./src/iconfont",
+    "use_typescript": true,
+    "platforms": "*",
+    "use_rpx": true,
+    "trim_icon_prefix": "icon",
+    "default_icon_size": 18,
+    "design_width": 750
+}

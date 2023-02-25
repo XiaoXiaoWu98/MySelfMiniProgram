@@ -16,3 +16,8 @@ declare namespace NodeJS {
     TARO_ENV: 'weapp' | 'swan' | 'alipay' | 'h5' | 'rn' | 'tt' | 'quickapp' | 'qq' | 'jd'
   }
 }
+declare namespace JSX {
+  interface IntrinsicElements {
+      ['t-captcha']: any
+  }
+}
